@@ -29,7 +29,7 @@ const deleteUser = require("../controllers/deleteUser")
  // List user
  //
  
- app.get('/alluser',authRole(1),listUsers)
+ app.get('/alluser',listUsers)
  
  //
  // Update user 
