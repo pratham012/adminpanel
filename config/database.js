@@ -4,7 +4,9 @@ const database = {
         host: 'adminpanel--deploy.herokuapp.com',
         user: 'root',
         password: '1234',
-        database: 'admin_panel'
+        database: 'admin_panel',
+        min: 2,
+        max: 10,
     }
 }
 
