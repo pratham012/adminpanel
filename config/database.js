@@ -5,7 +5,8 @@ const database = {
         user: 'root',
         password: '1234',
         database: 'admin_panel',
-        "connectTimeout": 20000
+        "connectTimeout": 20000,
+        "acquireTimeout": 20000
     }
 }
 
