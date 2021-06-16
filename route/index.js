@@ -16,12 +16,9 @@ const deleteUser = require("../controllers/deleteUser")
     console.log(`Server started on port : 3000`)
   })
 
-  app.post('/',(req,res,next)=>{
-    if(req.body){
-    console.log(req.body.id)
-  next()}
-    res.send("Welcome")
-  })
+  app.get('/',(req,res,next)=>{
+    if(req.body){next()}
+    res.send("Welcome") })
  //
  // Login user
  //
@@ -32,13 +29,13 @@ const deleteUser = require("../controllers/deleteUser")
  // List user
  //
  
- app.get('/alluser',listUsers)
+ app.get('/alluser',authRole(1),listUsers)
  
  //
  // Update user 
  //
  
- app.post('/updateuser',updateUser)
+ app.post('/updateuser',authRole(2),updateUser)
  
  //
  // Delete user 
