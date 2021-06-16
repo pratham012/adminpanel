@@ -17,7 +17,7 @@ const deleteUser = require("../controllers/deleteUser")
   })
 
   app.get('/',(req,res)=>{
-    res.send("Welcome..")
+    res.send("Welcome")
   })
  //
  // Login user
@@ -29,7 +29,7 @@ const deleteUser = require("../controllers/deleteUser")
  // List user
  //
  
- app.get('/alluser',listUsers)
+ app.get('/alluser',authRole(1),listUsers)
  
  //
  // Update user 
