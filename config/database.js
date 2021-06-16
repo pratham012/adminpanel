@@ -5,8 +5,7 @@ const database = {
         user: 'root',
         password: '1234',
         database: 'admin_panel',
-        min: 2,
-        max: 10,
+        min: 0
     }
 }
 
