@@ -5,7 +5,8 @@ const database = {
         user: 'root',
         password: '1234',
         database: 'admin_panel',
-        port : 3306
+        port : 3306,
+        min : 0
     }
 }
 
