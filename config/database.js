@@ -1,7 +1,7 @@
 const database = {
     client: 'mysql2',
     connection: {
-        host: '127.0.0.1',
+        host: 'adminpanel--deploy.herokuapp.com',
         user: 'root',
         password: '1234',
         database: 'admin_panel'
