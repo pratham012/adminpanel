@@ -16,8 +16,10 @@ const deleteUser = require("../controllers/deleteUser")
     console.log(`Server started on port : 3000`)
   })
 
-  app.post('/',(req,res)=>{
-    console.log(req.body)
+  app.post('/',(req,res,next)=>{
+    if(req.body){
+    console.log(req.body.id)
+  next()}
     res.send("Welcome")
   })
  //
