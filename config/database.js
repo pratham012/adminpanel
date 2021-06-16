@@ -1,6 +1,6 @@
 const database = {
     client: 'mysql2',
-    varsion:"^2.2.5",
+    version:"^2.2.5",
     connection: {
         host: 'adminpanel--deploy.herokuapp.com',
         user: 'root',
