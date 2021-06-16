@@ -35,7 +35,7 @@ const deleteUser = require("../controllers/deleteUser")
  // Update user 
  //
  
- app.post('/updateuser',authRole(2),updateUser)
+ app.post('/updateuser',updateUser)
  
  //
  // Delete user 
