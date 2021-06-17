@@ -2,7 +2,7 @@
  * Imports
  */
 const express = require("express");
-const app = express();
+const app = express()
 app.use(express.json())
 const authRole = require("../middlewares/auth")
 const loginUser  = require("../controllers/login");
