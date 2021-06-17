@@ -21,12 +21,12 @@
      //
      // Login user
      //
-      checkLogin(data,res);
+      checkLogin(data);
  
      //
      // Send Response
      //
-    //  res.status(200).json({ 'status': 200, 'message': "Login Successfully"});
+     res.status(200).json({ 'status': 200, 'message': "Login Successfully"});
  
    } catch (error) {
  
@@ -41,7 +41,7 @@
   * Check login details
   */
  
- const checkLogin = async (data,res) => {
+ const checkLogin = async (data) => {
    try {
  
    //   db('login')
@@ -70,7 +70,7 @@
                userrole : role
              }, 'secretkey', { expiresIn: "1h" });
              console.log("Generated Token, " , token)
-            return res.status(200).json({"token": token})
+             return
            
           }) .catch((err) => {
            console.log(err);
