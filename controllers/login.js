@@ -26,7 +26,7 @@
      //
      // Send Response
      //
-     res.status(200).json({ 'status': 200, 'message': "Login Successfully"});
+    //  res.status(200).json({ 'status': 200, 'message': "Login Successfully"});
  
    } catch (error) {
  
