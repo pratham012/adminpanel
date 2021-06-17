@@ -21,7 +21,7 @@
            //
            // Send Response
            //
-           res.status(200).json({ 'status': 200, 'result': rows});
+           await res.status(200).json({ 'status': 200, 'result': rows});
      }
      catch(error){
          console.log(error);
