@@ -1,12 +1,8 @@
 /**
  * Imports
  */
-
-const http = require('http')
-
 const express = require("express");
 const app = express();
-const apps = http.createServer(app)
 app.use(express.json())
 const authRole = require("../middlewares/auth")
 const loginUser  = require("../controllers/login");
@@ -14,15 +10,13 @@ const listUsers = require("../controllers/listuser")
 const updateUser = require("../controllers/update_user")
 const deleteUser = require("../controllers/deleteUser")
  
-
-
  
 
- apps.listen(process.env.PORT || 3000, () => {
+ app.listen(process.env.PORT || 3000, () => {
     console.log(`Server started on port : 3000`)
   })
 
-  apps.get('/',(req,res)=>{
+  app.get('/',(req,res)=>{
     res.send("Welcome")
   })
  //
