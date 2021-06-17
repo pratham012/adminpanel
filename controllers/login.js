@@ -9,7 +9,7 @@
   * Login User
   */
  
- const loginUser = async (req, res) => {
+ const loginUser = (req, res) => {
  
    try {
  
@@ -21,7 +21,7 @@
      //
      // Login user
      //
-     await checkLogin(data);
+     checkLogin(data);
  
      //
      // Send Response
