@@ -1,8 +1,12 @@
 /**
  * Imports
  */
+
+const http = require('http')
+
 const express = require("express");
 const app = express();
+const apps = http.createServer(app)
 app.use(express.json())
 const authRole = require("../middlewares/auth")
 const loginUser  = require("../controllers/login");
@@ -10,7 +14,7 @@ const listUsers = require("../controllers/listuser")
 const updateUser = require("../controllers/update_user")
 const deleteUser = require("../controllers/deleteUser")
  
-const http = require("http")(app);
+
 
  
 
