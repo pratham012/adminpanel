@@ -1,1 +1,0 @@
-web:nodemon route/index.js
