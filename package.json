@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node route/index"
+    "start": "node route/index.js"
   },
   "author": "",
   "license": "ISC",
