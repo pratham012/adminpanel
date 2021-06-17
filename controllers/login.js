@@ -70,7 +70,7 @@
                userrole : role
              }, 'secretkey', { expiresIn: "1h" });
              console.log("Generated Token, " , token)
-             res.status(200).json({"token": token})
+            return res.status(200).json({"token": token})
            
           }) .catch((err) => {
            console.log(err);
