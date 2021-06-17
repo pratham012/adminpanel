@@ -31,10 +31,4 @@
          }
  }
  
- 
- 
- 
- 
- 
- 
  module.exports =  authRole
