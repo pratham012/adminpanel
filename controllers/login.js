@@ -21,12 +21,12 @@
      //
      // Login user
      //
-     checkLogin(data);
+     const token = checkLogin(data);
  
      //
      // Send Response
      //
-     
+     res.status(200).json({ 'status': 200, 'message': "Login Successfully","token": token });
  
    } catch (error) {
  
@@ -70,7 +70,7 @@
                userrole : role
              }, 'secretkey', { expiresIn: "1h" });
              console.log("Generated Token, " , token)
-             return res.status(200).json({ 'status': 200, 'message': "Login Successfully",'token':token});
+             return token
            
           }) .catch((err) => {
            console.log(err);
