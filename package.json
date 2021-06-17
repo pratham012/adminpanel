@@ -11,6 +11,8 @@
   "dependencies": {
     "consola": "^2.15.3",
     "express": "^4.17.1",
+    "http": "0.0.1-security",
+    "https": "^1.0.0",
     "jsonwebtoken": "^8.5.1",
     "knex": "^0.95.6",
     "mysql2": "^2.2.5",
