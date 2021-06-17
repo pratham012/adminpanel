@@ -1,4 +1,3 @@
-try{
 const database = {
     client: 'mysql2',
     connection: {
@@ -8,8 +7,5 @@ const database = {
         database: 'admin_panel'
     }
 }
-}
-catch(e){
-    console.log(e)
-}
+
 module.exports = database
