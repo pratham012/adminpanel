@@ -5,9 +5,10 @@ const database = {
         user: 'root',
         password: '1234',
         database: 'admin_panel',
-        ssl:{rejectUnauthorized: false}
+       
         
     }
+    ,ssl:{rejectUnauthorized: false}
 }
 
 module.exports = database
