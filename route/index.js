@@ -13,12 +13,12 @@ const updateUser = require("../controllers/update_user")
 const deleteUser = require("../controllers/deleteUser")
  
  
-http.createServer({ssl: {rejectUnauthorized: false}},app)
-https.createServer({ssl: {rejectUnauthorized: false}},app)
+const server1 = http.createServer(app)
+const server2 = https.createServer({ssl:{rejectUnauthorized: false}},app).listen(process.env.PORT || 3000)
 
- app.listen(process.env.PORT || 3000, () => {
-    console.log(`Server started on port : 3000`)
-  })
+//  app.listen(process.env.PORT || 3000, () => {
+//     console.log(`Server started on port : 3000`)
+//   })
 
   app.get('/',(req,res)=>{
     res.send("Welcome.")
