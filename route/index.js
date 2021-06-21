@@ -14,11 +14,11 @@ const deleteUser = require("../controllers/deleteUser")
  
  
 const server1 = http.createServer(app)
-const server2 = https.createServer({ssl:{rejectUnauthorized: false}},app).listen(process.env.PORT || 3000)
+const server2 = https.createServer(app)
 
-//  app.listen(process.env.PORT || 3000, () => {
-//     console.log(`Server started on port : 3000`)
-//   })
+ app.listen(process.env.PORT || 3000, () => {
+    console.log(`Server started on port : 3000`)
+  })
 
   app.get('/',(req,res)=>{
     res.send("Welcome.")
