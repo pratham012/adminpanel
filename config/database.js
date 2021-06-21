@@ -8,7 +8,7 @@ const database = {
        
         
     }
-    ,ssl:{rejectUnauthorized: false}
+   
 }
 
 module.exports = database
