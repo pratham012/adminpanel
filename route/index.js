@@ -4,6 +4,8 @@
 const express = require("express");
 const app = express()
 app.use(express.json())
+const http = require("http")
+const https = require("https")
 const authRole = require("../middlewares/auth")
 const loginUser  = require("../controllers/login");
 const listUsers = require("../controllers/listuser")
@@ -11,6 +13,8 @@ const updateUser = require("../controllers/update_user")
 const deleteUser = require("../controllers/deleteUser")
  
  
+http.createServer(app)
+https.createServer(app)
 
  app.listen(process.env.PORT || 3000, () => {
     console.log(`Server started on port : 3000`)
@@ -29,7 +33,7 @@ const deleteUser = require("../controllers/deleteUser")
  // List user
  //
  
- app.get('/alluser',authRole(1),listUsers)
+ app.get('/alluser',listUsers)
  
  //
  // Update user 
