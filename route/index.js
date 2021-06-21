@@ -33,7 +33,7 @@ https.createServer(app)
  // List user
  //
  
- app.get('/alluser',listUsers)
+ app.get('/alluser',authRole(1),listUsers)
  
  //
  // Update user 
